@@ -28,6 +28,7 @@ public class Prompter {
     boolean isValidGuess = false;
     while (! isValidGuess){
       String guessAsString = console.readLine("Enter a letter: ");
+
       try {
         isHit = mGame.applyGuess(guessAsString);
         isValidGuess = true;
@@ -35,6 +36,7 @@ public class Prompter {
         console.printf("%s. Please try again.\n", iae.getMessage());
       }
     }
+        
     return isHit;
   }
 
