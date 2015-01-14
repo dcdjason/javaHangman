@@ -62,4 +62,5 @@ public class Game {
   public boolean isSolved() {
     return getCurrentProgress().indexOf('-') == -1;
   }
+  
 }
